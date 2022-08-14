@@ -1,10 +1,10 @@
-import React, {useState} from "react";
-import axios from "axios";
-
+import React, { useState } from 'react';
+import WeatherApp from './components/WeatherApp'
 function App() {
+
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div>
+      <WeatherApp />
     </div>
   );
 }
