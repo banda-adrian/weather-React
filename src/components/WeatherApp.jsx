@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../../src/img/clouds.jpg';
+// const clouds = new URL('./img/clouds.jpg', import.meta.url);
+
 
 function WeatherApp() {
     const [data, setData] = useState({})
@@ -18,7 +21,8 @@ function WeatherApp() {
     }
 
     return (
-        <div className="h-screen v-screen relative bg-[#7f7f7f] ">
+
+        <div>                    
             {/* search, input */}
             <div className="text-center p-5">
                 <input className='p-1 text-base rounded-[25px] outline-white'
@@ -29,8 +33,8 @@ function WeatherApp() {
                     type="text" />
             </div>
             {/* container */}
-            <div className="max-w-[700px] h-[700px] m-auto p-4 relative top-[10%] flex flex-col justify-between">
-                
+            <div className="max-w-[700px] h-screen m-auto p-4 relative top-[10%] flex flex-col justify-between">
+
                 {/* top */}
                 <div className="w-full m-4-auto">
                     <div className="location">
